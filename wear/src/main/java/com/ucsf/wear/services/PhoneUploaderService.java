@@ -118,6 +118,7 @@ public class PhoneUploaderService extends UploaderService {
         public void syncUp() {
             Toast.makeText(context, R.string.toast_sync, Toast.LENGTH_SHORT).show();
             DeviceInterface.requestPatientInfo(context);
+            DeviceInterface.requestSensortagInfo(context);
         }
     }
 
